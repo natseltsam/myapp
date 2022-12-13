@@ -157,5 +157,5 @@ person = pd.DataFrame({
 predicted_class = lr.predict(person)
 probs = lr.predict_proba(person)
 
-st.markdown(f"Predicted class: {predicted_class[0]}")
+st.markdown(f"Predicted User (If 1, You are Predicted to be a LinkedIn User): {predicted_class[0]}")
 st.markdown(f"Probability that you are a LinkedIn User: {probs[0][1]}")
